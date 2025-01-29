@@ -27,12 +27,12 @@ function parametersValue(abc: parameters): parameters {
 console.log(parametersValue("Maciej"));
 console.log(parametersValue(3));
 
-interface User {
-    id: number,
-    name: string,
-    email?: string,
-    age?: number
-}
+// interface User {
+//     id: number,
+//     name: string,
+//     email?: string,
+//     age?: number
+// }
 
 function userCheckUp (abc: User): string {
     return abc.email ? `User ${abc.name} with id = ${abc.id} has ${abc.email} email` : `User ${abc.name} doesnt have email`
