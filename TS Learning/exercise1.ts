@@ -41,3 +41,5 @@ console.log(greetUser(user1));
 console.log(greetUser(user2));
 console.log(greetUser(user3));
 console.log(greetUser(user4));
+
+console.log(greetUser(pablo))

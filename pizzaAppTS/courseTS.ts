@@ -50,3 +50,20 @@ let students: Array<Person> = [person1]
 
 type UserRole = "guest" | "member" | "admin"
 let userRole: UserRole = "admin"
+
+// let value: any = 1
+// value.toUpperCase() 
+// value = "Hi!"
+// value.map()
+
+const gameScores = [14, 21, 33, 42, 59]
+const favouriteThings = ["thing1", "thing2", "thing3", "thing4"]
+const voters = [{name: "Alice", age: 42}, {name: "Bob", age: 40}]
+
+function getLastItem<PlaceholderType>(array: PlaceholderType[]){
+    return array[array.length - 1]
+}
+
+console.log(getLastItem(gameScores));
+console.log(getLastItem(favouriteThings));
+console.log(getLastItem(voters));
