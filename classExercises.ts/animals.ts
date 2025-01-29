@@ -17,4 +17,9 @@ class Cat extends Animals {
 }
 
 const cat = new Cat
-console.log(cat.makeSound())
+const animals = new Animals
+const dog = new Dog
+
+animals.makeSound()
+cat.makeSound()
+dog.makeSound()
