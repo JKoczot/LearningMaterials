@@ -1,9 +1,9 @@
 const leaves = "#";
-const count = 8;
+const count = 6;
 const rows = [];
 const trunk = "| |";
-let inverted = false; 
-let trunkOn = true;
+let inverted = true; 
+let trunkOn = false;
 
 function padRow(rowNumber, rowCount) {
     return " ".repeat(rowCount - rowNumber) + leaves.repeat(2 * rowNumber - 1) + " ".repeat(rowCount - rowNumber);
