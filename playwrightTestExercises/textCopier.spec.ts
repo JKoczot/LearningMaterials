@@ -7,7 +7,7 @@ test('get started link', async ({ page }) => {
 
     await page.click('button:has-text("Enable")');
 
-    await page.waitForSelector('div[id="loading"]', {state: 'hidden'});
+    //await page.waitForSelector('div[id="loading"]', {state: 'hidden'});
 
     await textField.fill(textToType);
 

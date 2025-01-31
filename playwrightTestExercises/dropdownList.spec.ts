@@ -1,11 +1,11 @@
-import { test } from '@playwright/test';
+import { test, expect } from '@playwright/test';
 
 test('get started link', async ({ page }) => {
     await page.goto('https://the-internet.herokuapp.com/dropdown');
-    const dropdownClick = page.locator('select[id="dropdown"]');
+    const dropdown = page.locator('select[id="dropdown"]');
 
-    await dropdownClick.click();
+    await dropdown.selectOption({label: 'Option 2'})
 
-    await dropdownClick.selectOption({value: '2'})
+    await expect(dropdown).toHaveValue('2');
 
 });
