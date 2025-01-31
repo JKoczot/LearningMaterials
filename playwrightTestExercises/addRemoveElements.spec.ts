@@ -3,8 +3,8 @@ import { test, expect } from '@playwright/test';
 test('get started link', async ({ page }) => {
     await page.goto('https://the-internet.herokuapp.com/add_remove_elements/');
 
-    const x: number = 5; 
-    const y:number = 3;
+    const x = 5; 
+    const y = 3;
 
     for (let i = 0; i < x; i++){
     await page.click('button:has-text("Add Element")');

@@ -1,8 +1,11 @@
 import { test } from '@playwright/test';
 
-test('get started link', async ({ page }) => {
+test('click edit button next to Phaedrum8', async ({ page }) => {
     await page.goto('https://the-internet.herokuapp.com/challenging_dom');
 
-    await page.click('text=Edit');
-    
-  });
+    const row = await page.getByText('Phaedrum8').locator('..');   
+
+    const editButton = row.getByRole('link', { name: 'edit' });
+
+    await editButton.click();
+});
